@@ -1,13 +1,14 @@
 #box {
-  width: 400px;
-  height: 400px;
-  background-color: red;
+  width: 100%;
+  height: 100%;
+  background-color: black;
   color: white;
 }
 
-#clock-container {
-  color: white;
-  width: 200px;
-  height: 200px;
-  background-color: black;
+#clock {
+  color: #ffffff;
+  font-size: 200px;
+  text-align: center;
+  font-family: sans-serif;
+  border: 1px solid black;
 }

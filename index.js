@@ -1,5 +1,5 @@
 var box = document.getElementById('box')
-var clock = document.getElementById('clock-container')
+var clock = document.getElementById('clock')
 
 
 function logTime() {
