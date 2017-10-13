@@ -2,6 +2,7 @@ var box = document.getElementById('box');
 var clock = document.getElementById('clock');
 
 
+
 function logTime() {
 
   var time = new Date();
@@ -13,24 +14,16 @@ function logTime() {
 
   var stringClock = ('#' + hrs.toString() + min.toString() + sec.toString());
 
+  var stringClock2 = (4 * ('#' + hrs.toString() + min.toString() + sec.toString()));
+
   document.body.style.backgroundColor = stringClock
+  document.container.style.backgroundColor = stringClock2
 
 }
 
 
 
 
-//function changebackground(color) {
-//document.style.background = #ffffff
-
-//}
-
-
 
 
 setInterval(logTime, 1000);
-
-
-
-
-//clock.addEventListener('load', logTime);

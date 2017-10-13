@@ -1,11 +1,16 @@
-* {
-  box-sizing: border-box;
-}
+
+
+.container {
+  width: 33%;
+  height: 100%;
+  background-color: black;
+  display: inline-block;
+ }
 
 
 body {
   height: 100%;
-  
+
 
   }
 
@@ -13,6 +18,13 @@ body {
   color: #ffffff;
   font-size: 200px;
   text-align: center;
-  font-family: sans-serif;
+  font-family: georgia, sans-serif;
+  margin-top: 200px;
+
+
+}
+
+#box {
+  background: linear-gradient(orange, red);
 
 }
