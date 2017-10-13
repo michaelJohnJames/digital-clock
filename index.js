@@ -1,5 +1,5 @@
-var box = document.getElementById('box')
-var clock = document.getElementById('clock')
+var box = document.getElementById('box');
+var clock = document.getElementById('clock');
 
 
 function logTime() {
@@ -10,15 +10,27 @@ function logTime() {
   var sec = time.getSeconds() > 9 ? time.getSeconds() : '0' + time.getSeconds();
 
   clock.innerHTML = (hrs + ':' + min + ':' + sec);
-  //var stringclock = clock.innerHTML.toString();
+
+  var stringClock = ('#' + hrs.toString() + min.toString() + sec.toString());
+
+  document.body.style.backgroundColor = stringClock
 
 }
 
 
 
 
+//function changebackground(color) {
+//document.style.background = #ffffff
+
+//}
+
+
+
 
 setInterval(logTime, 1000);
+
+
 
 
 //clock.addEventListener('load', logTime);
