@@ -1,5 +1,8 @@
-var box = document.getElementById('box');
+var box3 = document.getElementById('box3');
+var box2 = document.getElementById('box2');
 var clock = document.getElementById('clock');
+var hideBox = function() { box3.classList.add("hidden") };
+var showBox = function() { box3.classList.remove("hidden") };
 
 
 
@@ -14,16 +17,29 @@ function logTime() {
 
   var stringClock = ('#' + hrs.toString() + min.toString() + sec.toString());
 
-  var stringClock2 = (4 * ('#' + hrs.toString() + min.toString() + sec.toString()));
+  document.body.style.backgroundColor = stringClock;
 
-  document.body.style.backgroundColor = stringClock
-  document.container.style.backgroundColor = stringClock2
+}
 
+var time = new Date();
+var hrs = time.getHours() > 9 ? time.getHours() : '0' + time.getMinutes();
+var min = time.getMinutes() > 9 ? time.getMinutes() : '0' + time.getMinutes();
+var sec = time.getSeconds() > 9 ? time.getSeconds() : '0' + time.getSeconds();
+
+function redBox() {
+  if ( sec != 00 ) {
+  box3.classList.add("hidden");
+}  else {  box3.classList.remove("hidden"); }
+}
+
+function flashRed() {
+if ( sec >= 55 ) {
+  box2.style.backgroundColor = red;
+}
 }
 
 
 
-
-
-
 setInterval(logTime, 1000);
+setInterval(redBox, 1000);
+setInterval(flashRed, 1000);
