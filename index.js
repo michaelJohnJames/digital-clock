@@ -39,9 +39,21 @@ function redFlash() {
 
   if ( seconds > "49" ) {
   document.getElementById("clock").style.color = "red";
-  document.getElementById("headline").style.color = "red";
-} else { document.getElementById("clock").style.color = "black";
-  document.getElementById("headline").style.color = "white";}
+  } else { document.getElementById("clock").style.color = "black";
+}
+
+  if ( seconds > "56" ) {
+    document.getElementById("word1").style.color = "red";
+  } else { document.getElementById("word1").style.color = "white"; }
+
+  if ( seconds > "57" ) {
+    document.getElementById("word2").style.color = "red";
+  } else { document.getElementById("word2").style.color = "white"; }
+
+  if ( seconds > "58" ) {
+    document.getElementById("word3").style.color = "red";
+  } else { document.getElementById("word3").style.color = "white"; }
+
 }
 
 
