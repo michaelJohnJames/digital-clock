@@ -63,3 +63,34 @@ p {
 .hidden {
   display: none;
 }
+
+@media all and (max-width: 1270px) {
+
+  h1 {
+    font-size: 100px;
+  }
+
+  .box1 {
+    display: none;
+  }
+}
+
+  @media all and (max-width: 1100px) {
+  h1 {
+    font-size: 75px;
+    text-align: center;
+  }
+  }
+
+  @media all and (max-width: 865px) {
+  h1 {
+    font-size: 50px;
+    }
+  }
+
+  @media all and (max-width: 630px) {
+  h1 {
+    display: none;
+  }
+
+  }
