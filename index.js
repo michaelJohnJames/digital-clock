@@ -15,7 +15,7 @@ function logTime() {
 
   clock.innerHTML = (hrs + ':' + min + ':' + sec);
 
-  var stringClock = ('#' + hrs.toString() + min.toString() + sec.toString());
+  var stringClock = ( '#' + hrs.toString() + min.toString() + sec.toString() );
 
   document.body.style.backgroundColor = stringClock;
 
@@ -39,9 +39,8 @@ function redFlash() {
 
   if ( seconds > "49" ) {
   document.getElementById("clock").style.color = "red";
-  } else { document.getElementById("clock").style.color = "black";
-}
-
+  } else { document.getElementById("clock").style.color = "black"; }
+  
   if ( seconds > "56" ) {
     document.getElementById("word1").style.color = "red";
   } else { document.getElementById("word1").style.color = "white"; }
