@@ -1,8 +1,12 @@
 var box3 = document.getElementById('box3');
 var box2 = document.getElementById('box2');
 var clock = document.getElementById('clock');
-var hideBox = function(box3) { box3.classList.add("hidden") };
-var showBox = function(box3) { box3.classList.remove("hidden") };
+var hideBox = function(box3) {
+  box3.classList.add("hidden")
+};
+var showBox = function(box3) {
+  box3.classList.remove("hidden")
+};
 
 
 
@@ -15,7 +19,7 @@ function logTime() {
 
   clock.innerHTML = (hrs + ':' + min + ':' + sec);
 
-  var stringClock = ( '#' + hrs.toString() + min.toString() + sec.toString() );
+  var stringClock = ('#' + hrs.toString() + min.toString() + sec.toString());
 
   document.body.style.backgroundColor = stringClock;
 
@@ -27,9 +31,11 @@ function redBox() {
   var time = new Date();
   var seconds = time.getSeconds();
 
- if ( seconds > 10 ) {
-  document.getElementById("box3").classList.add('hidden');
-}  else {   document.getElementById("box3").classList.remove('hidden'); }
+  if (seconds > 10) {
+    document.getElementById("box3").classList.add('hidden');
+  } else {
+    document.getElementById("box3").classList.remove('hidden');
+  }
 }
 
 
@@ -37,21 +43,29 @@ function redFlash() {
   var time = new Date();
   var seconds = time.getSeconds();
 
-  if ( seconds > "49" ) {
-  document.getElementById("clock").style.color = "red";
-  } else { document.getElementById("clock").style.color = "black"; }
-  
-  if ( seconds > "56" ) {
+  if (seconds > "49") {
+    document.getElementById("clock").style.color = "red";
+  } else {
+    document.getElementById("clock").style.color = "black";
+  }
+
+  if (seconds > "56") {
     document.getElementById("word1").style.color = "red";
-  } else { document.getElementById("word1").style.color = "white"; }
+  } else {
+    document.getElementById("word1").style.color = "white";
+  }
 
-  if ( seconds > "57" ) {
+  if (seconds > "57") {
     document.getElementById("word2").style.color = "red";
-  } else { document.getElementById("word2").style.color = "white"; }
+  } else {
+    document.getElementById("word2").style.color = "white";
+  }
 
-  if ( seconds > "58" ) {
+  if (seconds > "58") {
     document.getElementById("word3").style.color = "red";
-  } else { document.getElementById("word3").style.color = "white"; }
+  } else {
+    document.getElementById("word3").style.color = "white";
+  }
 
 }
 
