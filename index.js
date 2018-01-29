@@ -6,7 +6,7 @@ function logTime() {
   var min = time.getMinutes() > 9 ? time.getMinutes() : '0' + time.getMinutes();
   var sec = time.getSeconds() > 9 ? time.getSeconds() : '0' + time.getSeconds();
 
-  clock.innerHTML = (hrs + ':' + min + ':' + sec);
+  clock.textContent = (hrs + ':' + min + ':' + sec);
 
   var stringClock = ( '#' + hrs.toString() + min.toString() + sec.toString());
 
